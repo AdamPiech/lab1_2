@@ -30,7 +30,6 @@ public class Invoice  {
 	private Money net;
 	private Money gros;
 	private List<InvoiceLine> items;
-
 	private Id id;
 
 	Invoice(Id invoiceId, ClientData client) {
