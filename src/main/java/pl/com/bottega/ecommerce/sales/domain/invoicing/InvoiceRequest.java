@@ -1,3 +1,10 @@
+/*
+ * Klasa InvoiceRequest mimo, ¿e w punkcie 5 istnia³ 
+ * nakaz jej stworzenia, istania³a ju¿.
+ * Zmieni³em jedynie parametry klasy BookKeeper 
+ * oraz usun¹³em zduplikowany geter pola ClientData. 
+ */
+
 package pl.com.bottega.ecommerce.sales.domain.invoicing;
 
 import java.util.ArrayList;
@@ -17,10 +24,6 @@ public class InvoiceRequest {
 	
 	public void add(RequestItem item){
 		items.add(item);
-	}
-	
-	public ClientData getClient() {
-		return client;
 	}
 	
 	public Collection<RequestItem> getItems() {
